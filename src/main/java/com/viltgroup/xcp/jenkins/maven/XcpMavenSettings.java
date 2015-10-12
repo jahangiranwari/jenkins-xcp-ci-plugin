@@ -60,7 +60,7 @@ public class XcpMavenSettings {
 	        JellyContext context = new JellyContext();
 	        context.setVariable("workspacePath", OSPathHacks.processFilePath(workspacePath));
 	        context.setVariable("xcpDesignerPath", xcpDesignerPath);
-	        context.setVariable("xcpDesignerMavenPath", String.format("%s/maven", OSPathHacks.processFilePath(xcpDesignerPath)));
+	        context.setVariable("xcpDesignerMavenPath", String.format("%s/maven/designer", OSPathHacks.processFilePath(xcpDesignerPath)));
 	        context.setVariable("localRepositoryPath", OSPathHacks.processFilePath(localRepositoryPath));
 	        script.run( context, output );
 	        output.flush();
